@@ -31,6 +31,18 @@ You can now build your scss files as follows
 $ npm run build-css
 ```
 
+## Example
+
+@import in sass can now be used just like a require statement. The example below imports the main scss file from the newsapps-syles npm module. At build time, all @import statements will be resolved locally or like npm modules. Also includes support for partial (e.g. _partial.scss).
+
+```scss
+@import "newsapps-styles";
+
+.some-style {
+  color: $primary-blue;
+}
+```
+
 ## API
 
 Coming soon...
