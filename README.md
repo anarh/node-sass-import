@@ -20,7 +20,7 @@ Used in conjunction with node-sass. In a simple npm-only build setup, the exampl
   "description": "fun package",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass test.scss dist/test.css --importer node_modules/node-sass-import/index.js"
+    "build-css": "node-sass test.scss dist/test.css --importer node_modules/node-sass-import"
   }
 }
 
