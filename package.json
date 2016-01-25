@@ -37,12 +37,12 @@
     "tape": "^4.0.1",
     "tap-spec": "^4.0.2",
     "gaze-cli": "^0.2.0",
-    "standard": "^4.5.0"
+    "semistandard": "^7.0.5"
   },
   "scripts": {
     "prepublish": "npm run lint && npm test",
     "istanbul": "istanbul cover test/index.js",
-    "lint": "standard",
+    "lint": "semistandard",
     "test": "node test/index.js | tap-spec",
     "test:watch": "gaze 'npm test' 'test/**/*.js' 'lib/**/*.js' 'index.js'",
     "start": "npm run test:watch"
