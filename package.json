@@ -28,6 +28,7 @@
   ],
   "dependencies": {
     "glob": "^6.0.4",
+    "path-parse": "^1.0.5",
     "resolve": "^1.1.7",
     "yargs": "^3.15.0"
   },
