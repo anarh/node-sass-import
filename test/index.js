@@ -9,12 +9,12 @@ test('base:function:test', function (t) {
   t.end();
 });
 
-test('base:importer:test', function(t) {
+test('base:importer:test', function (t) {
   sass.render({
     file: 'test/fixtures/main.scss',
     importer: nodeSassImport
-  }, function(err, result) {
-    t.error(err, "should render SASS without errors");
+  }, function (err, result) {
+    t.error(err, 'should render SASS without errors');
     t.end();
   });
 });
