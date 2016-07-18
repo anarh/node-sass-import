@@ -11,10 +11,10 @@ test('base:function:test', function (t) {
 
 test('base:importer:test', function(t) {
   sass.render({
-    file: 'test/test.scss',
+    file: 'test/fixtures/main.scss',
     importer: nodeSassImport
   }, function(err, result) {
-    t.error(err);
+    t.error(err, "should render SASS without errors");
     t.end();
   });
 });
