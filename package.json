@@ -39,7 +39,9 @@
     "tape": "^4.0.1",
     "tap-spec": "^4.0.2",
     "gaze-cli": "^0.2.0",
-    "semistandard": "^7.0.5"
+    "semistandard": "^7.0.5",
+    "demo-scss-npm-module": "^0.0.3",
+    "node-sass": "^3.8.0"
   },
   "scripts": {
     "prepublish": "npm run lint && npm test",
