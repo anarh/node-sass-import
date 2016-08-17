@@ -1,6 +1,6 @@
 {
   "name": "node-sass-import",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Allows usage of @include (of .scss) akin to require (of .js) in node.js",
   "bugs": "https://github.com/anarh/node-sass-import/issues",
   "author": "Emmanuel (Manny) Narh <eanarh@yahoo.com>",
