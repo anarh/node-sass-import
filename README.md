@@ -2,7 +2,7 @@
 
 [![npm][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![js-standard-style][standard-image]][standard-url]
 
-Allows usage of (@import "some-sass-npm-module") akin to require("some-module") in node.js
+Allows usage of `@import "some-sass-npm-module"` akin to `require("some-npm-module")` in node.js
 
 ## Install
 
