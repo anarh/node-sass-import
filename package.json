@@ -27,6 +27,7 @@
     "importer"
   ],
   "dependencies": {
+    "async": "2.0.1",
     "glob": "^6.0.4",
     "path-format": "^1.2.1",
     "path-parse": "^1.0.5",
