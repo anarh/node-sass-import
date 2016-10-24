@@ -1,0 +1,5 @@
+.idea
+.editorconfig
+.gitignore
+.travis.yml
+test
