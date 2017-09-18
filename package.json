@@ -46,6 +46,7 @@
   },
   "scripts": {
     "prepublish": "npm run lint && npm test",
+    "postinstall": "npm rebuild node-sass",
     "istanbul": "istanbul cover test/index.js",
     "lint": "semistandard",
     "test": "node test/index.js | tap-spec",
