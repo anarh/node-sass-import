@@ -1,0 +1,90 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js --proxy localhost
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Liquid Technologies\Liquid Studio 2017\XmlDataBinder15\Redist15\cpp\win32\bin;C:\Program Files\Liquid Technologies\Liquid Studio 2017\XmlDataBinder15\Redist15\cpp\win64\bin;C:\Program Files\PuTTY\;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Druide\Antidote 9\Application\Bin64\;C:\Program Files (x86)\Druide\Antidote 9\Application\Bin32\;C:\Program Files\Git\cmd;%DASHLANE_DLL_DIR%
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  8.2.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "node-sass-import",
+    "version": "1.1.1",
+    "description": "Allows usage of @include (of .scss) akin to require (of .js) in node.js",
+    "bugs": "https://github.com/anarh/node-sass-import/issues",
+    "author": "Emmanuel (Manny) Narh <eanarh@yahoo.com>",
+    "license": "MIT",
+    "main": "index.js",
+    "files": [
+      "index.js",
+      "lib",
+      "LICENSE"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/anarh/node-sass-import"
+    },
+    "keywords": [
+      "node-sass-import",
+      "sass",
+      "scss",
+      "import",
+      "require",
+      "npm",
+      "node",
+      "loader",
+      "importer"
+    ],
+    "dependencies": {
+      "async": "2.0.1",
+      "glob": "^6.0.4",
+      "path-format": "^1.2.1",
+      "path-parse": "^1.0.5",
+      "resolve": "^1.1.7",
+      "yargs": "^3.15.0"
+    },
+    "devDependencies": {
+      "coveralls": "^2.11.2",
+      "istanbul": "^0.3.8",
+      "tape": "^4.0.1",
+      "tap-spec": "^4.0.2",
+      "gaze-cli": "^0.2.0",
+      "semistandard": "^7.0.5",
+      "demo-scss-npm-module": "^0.0.3",
+      "node-sass": "^3.8.0"
+    },
+    "scripts": {
+      "prepublish": "npm run lint && npm test",
+      "istanbul": "istanbul cover test/index.js",
+      "lint": "semistandard",
+      "test": "node test/index.js | tap-spec",
+      "test:watch": "gaze 'npm test' 'test/**/*.js' 'lib/**/*.js' 'index.js'",
+      "start": "npm run test:watch"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/yargs: tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:80
+      at ClientRequest.onError (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:128400:17)
+      at Object.onceWrapper (events.js:316:30)
+      at emitOne (events.js:115:13)
+      at ClientRequest.emit (events.js:210:7)
+      at Socket.socketErrorListener (_http_client.js:401:9)
+      at emitOne (events.js:115:13)
+      at Socket.emit (events.js:210:7)
+      at emitErrorNT (internal/streams/destroy.js:64:8)
+      at _combinedTickCallback (internal/process/next_tick.js:138:11)
+      at process._tickCallback (internal/process/next_tick.js:180:9)
