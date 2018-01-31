@@ -2,6 +2,7 @@
 
 [![npm][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![js-standard-style][standard-image]][standard-url]
 
+Allows recursive import of SCSS components from local and/or node_modules directories using npm's module resolving algorithm. Without the need for tildes(~) to import from node_modules.
 Allows usage of `@import "some-sass-npm-module"` akin to `require("some-npm-module")` in node.js
 
 ## Install
@@ -33,7 +34,7 @@ $ npm run build-css
 
 ## Example
 
-@import in sass can now be used just like a require statement. The example below imports the main scss file from the newsapps-syles npm module. At build time, all @import statements will be resolved locally or like npm modules. Also includes support for partial (e.g. _partial.scss).
+@import in sass can now be used just like a require statement. The example below imports the main scss file from the newsapps-syles npm module. At build time, all @import statements will be resolved locally or like npm modules. Also includes import support for partial scss files e.g. _partial.scss
 
 ```scss
 @import "newsapps-styles";
