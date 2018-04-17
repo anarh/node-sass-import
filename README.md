@@ -46,7 +46,7 @@ $ npm run build-css
 
 ## API
 
-Coming soon...
+Version 2+ supports Node 6+ and npm 2+
 
 ## License
 
