@@ -1,6 +1,6 @@
 {
   "name": "node-sass-import",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Allows recursive import of SCSS components from local and/or node_modules directories using npm's module resolving algorithm",
   "bugs": "https://github.com/anarh/node-sass-import/issues",
   "author": "Emmanuel Addo Narh <eanarh@yahoo.com>",
