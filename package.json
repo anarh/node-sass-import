@@ -32,7 +32,8 @@
     "path-format": "1.2.1",
     "path-parse": "1.0.5",
     "resolve": "1.5.0",
-    "yargs": "11.0.0"
+    "yargs": "11.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@commitlint/cli": "6.1.0",
@@ -52,10 +53,12 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "istanbul": "istanbul cover test/index.js",
     "lint": "semistandard",
-    "prepublish": "npm run lint && npm test",
+    "prepublish": "npm run snyk-protect && npm run lint && npm test",
     "release": "standard-version",
     "start": "npm run test:watch",
     "test": "node test/index.js | tap-spec",
-    "test:watch": "gaze 'npm test' 'test/**/*.js' 'lib/**/*.js' 'index.js'"
-  }
+    "test:watch": "gaze 'npm test' 'test/**/*.js' 'lib/**/*.js' 'index.js'",
+    "snyk-protect": "snyk protect"
+  },
+  "snyk": true
 }
