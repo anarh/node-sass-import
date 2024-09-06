@@ -27,12 +27,12 @@
     "importer"
   ],
   "dependencies": {
-    "async": "2.6.0",
+    "async": "3.0.0",
     "glob": "7.1.2",
     "path-format": "1.2.1",
     "path-parse": "1.0.5",
-    "resolve": "1.5.0",
-    "yargs": "11.0.0"
+    "resolve": "1.21.0",
+    "yargs": "17.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "6.1.0",
